@@ -11,6 +11,7 @@ public class PersistentStorageHelper extends SQLiteOpenHelper {
 
     //refer to constructor of SQLiteOpenHelper
     public PersistentStorageHelper(Context context){
+
         super(context,DB_NAME,null,DB_VERSION);
     }
 
