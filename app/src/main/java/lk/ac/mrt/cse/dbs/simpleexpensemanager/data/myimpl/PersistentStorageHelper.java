@@ -18,15 +18,15 @@ public class PersistentStorageHelper extends SQLiteOpenHelper {
     //GETS CALLED WHEN DB FIRST GETS CREATED
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE accounts(AccountNo TEXT NOT NULL PRIMARY KEY,"
+        sqLiteDatabase.execSQL("CREATE TABLE ACCOUNTS(AccountNo TEXT NOT NULL PRIMARY KEY,"
                             +"BankName TEXT,"
                             +"AccountHolder TEXT,"
                             +"Balance REAL);");
-        sqLiteDatabase.execSQL("CREATE TABLE transactions(Date TEXT," +
+        sqLiteDatabase.execSQL("CREATE TABLE TRANSACTIONS(Date TEXT," +
                 "AccountNo TEXT," +
                 "ExpenseType TEXT," +
                 "Amount REAL," +
-                "FOREIGN KEY (AccountNo) REFERENCES accounts(AccountNo));");
+                "FOREIGN KEY (AccountNo) REFERENCES ACCOUNTS(AccountNo));");
 
 
     }
