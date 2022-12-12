@@ -125,6 +125,7 @@ public class PersistentAccountDAO implements AccountDAO {
     }
 
     @Override
+    //need to check balance?
     public void updateBalance(String accountNo, ExpenseType expenseType, double amount) throws InvalidAccountException {
         SQLiteDatabase db=this.persistentStorageHelper.getWritableDatabase();
         ContentValues contentValues=new ContentValues();
