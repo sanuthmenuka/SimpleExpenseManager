@@ -88,7 +88,7 @@ public class PersistentAccountDAO implements AccountDAO {
 
         }
         else {
-            throw new InvalidAccountException();
+            throw new InvalidAccountException("No account found");
         }
 
 

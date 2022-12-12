@@ -1,4 +1,4 @@
-#Mon Dec 05 09:32:23 IST 2022
+#Mon Dec 12 09:50:31 IST 2022
 base.0=/Users/sanuth/SEM3/Database/LABS/mini-project/SimpleExpenseManager/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
